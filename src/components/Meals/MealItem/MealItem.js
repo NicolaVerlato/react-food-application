@@ -7,7 +7,7 @@ function MealItem(props) {
     const cartCtx = useContext(CartContext);
 
     const price = `$${props.price.toFixed(2)}`
-
+    
     const addToCartHandler = amount => {
         cartCtx.addItem({
             id: props.id,
